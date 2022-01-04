@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geekster Application Form</title>
+    </head>
+    <body style="text-align:center">
+        <h3> <span style="color:green"> Geekster Application Form</span></h3>
+        <form>
+        <label for="fname">Full Name*</label><br>
+        <input type="text" placeholder="enter tour name" id="fname" name="full_name" required>
+        <br><br>
+        <label for="emails">Email*</label><br>
+        <input type="email" name="Email" id="emails" placeholder="enter your email" required>
+        <br><br>
+        <label for="gender">Gender*</label><br>
+
+        Male <input type="radio" id="gender" name="Gender"> Female <input type="radio" id="gender" name="Gender">
+        <br><br>
+        <label for="marks">Marks*</label><br>
+        <input type="number" required min=0 max=100 name="marks" id="marks" placeholder="Enter your marks"><br><br>
+        <label for="course">Select Course</label><br>
+        <select id="course" required>
+             <option value="">Select Course</option>
+             <option value="Full Stack Web developer">Full Stack Web Development</option>
+             <option value="Advance web developer">Advanced Web Development</option>
+        </select>
+        <br><br>
+        <label for="phone">Phone*</label><br>
+        <input id="phone" name="Phone" placeholder="enter your phone number" required>
+        <br><br>
+        <label for="degree">Highest degree*</label><br>
+        <select id="degree" name="Highest_degree" required>
+            <option>Select Highest Degree</option>
+            <option value="b.tech">B.tech</option>
+            <option value="m.tech">M.tech</option>
+            <option value="others">Others</option>
+
+        </select>
+        <br><br>
+        <label for="completion_year">Year of completion*</label><br>
+        <select name="year of completion" id="completion_year" required>
+            <option value="">Select Year of completion</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+        </select>
+        <br><br>
+        <label for="skill">Programming skills</label><br>
+        <select name="Skill" id="skill" required>
+            <option value="">select your programming skill</option>
+            <option value="no coding">No coding</option>
+            <option value="basic coding">Basic coding</option>
+            <option value="intermediate">Intermediate coding</option>
+        </select>
+        <br><br>
+        <label for="pwd">Create Password*</label><br>
+        <input type="password" name="pwd" required minlength=6 maxlength=10 id="pwd" placeholder="Create a password"><br><br>
+        <input type="checkbox" required > By signing up, you agree
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+    </body>
+</html>
